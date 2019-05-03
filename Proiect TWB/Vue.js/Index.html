@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Lista departamente si angajati</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  </head>
+  <body>
+    <div id="app">
+      <div class="row">
+        <div class="col-sm-2">
+          <ul>
+              <li @click="clickDep(dep)" v-for="dep in listaDepartemente">{{dep.DenumireDep}}
+              </li>
+          </ul>
+        </div>
+        <div class="col-sm-2">
+            <ul>
+                <li @click="click(ang)" v-for="ang in listaAngajati">{{ang.Marca + " - " + ang.Nume}}
+                    <ul v-if="dep.Marca == ang.Marca"> <li>{{ dep.name }}</li></ul>
+                </li>
+
+            </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js"></script>
+  <script src="main.js"></script>
+</html>

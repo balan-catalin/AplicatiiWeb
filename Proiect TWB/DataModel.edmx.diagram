@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="0f5a1555f76d42f690854b6fc7262c5f" Name="Diagram1" ZoomLevel="95">
+        <EntityTypeShape EntityType="PersonDBModel.Angajat" Width="1.5" PointX="0.75" PointY="0.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="PersonDBModel.Departament" Width="1.5" PointX="3.375" PointY="0.5" IsExpanded="true" />
+        <AssociationConnector Association="PersonDBModel.FK_Angajat_Departament" ManuallyRouted="false" />
+        <AssociationConnector Association="PersonDBModel.FK_Departament_Angajat" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
